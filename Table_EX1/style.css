@@ -1,0 +1,26 @@
+table, th ,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.first_table {
+    height: 25px;
+    font-family:Arial;
+}
+
+.second_table {
+    height: 50px;
+}
+
+.third_table {
+    height: 50px;
+}
+
+.fourth_table {
+    height: 50px;
+}
+
+.fifth_table {
+    height: 25px;
+}
