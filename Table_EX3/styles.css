@@ -1,0 +1,57 @@
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.OWENGE{
+    width: 150px;
+    background-color: orange;
+    color: white;
+}
+
+.void1{
+    width: 350px;
+    background-color: orange;
+
+}
+
+.COMUNICATION {
+    width: 150px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+}
+
+.COMPANY{
+    vertical-align: top;
+}
+
+.ReseauxTop{
+    font-size: 13px;
+}
+
+.PRODUCTS{
+    height: 100px;
+    vertical-align: top;
+}
+
+
+.ReseauBottom{
+    font-size: 13px;
+}
+
+.void2{
+    background-color: orange;
+
+}
+
+.admin{
+    background-color: orange;
+
+}
+
+.website{
+    background-color: orange;
+
+}
