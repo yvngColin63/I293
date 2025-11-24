@@ -1,0 +1,28 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+.first-row-cell1 { text-align: left; vertical-align: middle; height: 50px; }
+.first-row-cell2 { text-align: center; vertical-align: middle; height: 50px; }
+.first-row-cell3 { text-align: right; vertical-align: middle; height: 50px; }
+
+.second-row-cell1 { text-align: left; vertical-align: top; height: 70px; }
+.second-row-cell2 { text-align: center; vertical-align: middle; height: 70px; }
+.second-row-cell3 { text-align: right; vertical-align: bottom; height: 70px; }
+
+.third-row-cell3 { text-align: center; vertical-align: top; height: 70px; }
+.third-row-cell4 { text-align: center; vertical-align: top; height: 70px; }
+
+.fourth-row-cell1 { height: 40px; }
+.fourth-row-cell2 { height: 40px; }
+
+.fifth-row-cell2 { text-align: left; vertical-align: middle; height: 50px; }
+.fifth-row-cell3 { text-align: left; vertical-align: middle; height: 50px; }
+.fifth-row-cell4 { text-align: center; vertical-align: middle; height: 100px; } 
+
+.sixth-row-cell4 { text-align: left; vertical-align: middle; height: 30px; }
+.sixth-row-cell5 { text-align: left; vertical-align: middle; height: 30px; }
+
+.seventh-row-cell4 { text-align: left; vertical-align: middle; height: 40px; }
