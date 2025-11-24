@@ -5,9 +5,24 @@ h1 {
 }
 
 h2 {
-    color: #000000;
+    color: #ff0000;
 }
 
 h3 {
     color: #ec1212;
+}
+
+.experiences li{
+    color: grey;
+}
+.skills li{
+    color: grey;
+}
+
+.activities a{
+    color: grey;
+}
+
+.formations li{
+    color: grey;
 }
