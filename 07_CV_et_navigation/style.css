@@ -1,0 +1,124 @@
+/*ICT-293 - Exercice CV3 - CRT 13.11.2025*/
+body{
+	font-family:arial;
+	font-size:20px;
+	color:rgb(249,249,249);
+	background-color:rgb(3,3,45);
+}
+
+header{
+	width:800px;
+	margin:auto;                       
+	padding:20px;                    
+}
+
+h1{
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;        
+	color:rgb(1,128,231);
+}
+
+h2{
+	font-family: "Lato", sans-serif; 
+	color:white;
+}
+article h2{
+	color:rgb(0,27,73);
+}
+
+img{
+	width:150px;
+	display:cover;
+}
+
+section{
+	padding:10px;                      
+	display:block;
+	width:620px;
+	margin:auto;
+}
+
+article{
+	display:inline-block;              
+	vertical-align:top;                
+	background-color:rgb(1,128,231);
+	border-top:5px solid grey;
+	border-radius:20px;
+	width:300px;
+	height:320px;
+	padding:20px;
+	margin:10px;
+}
+
+ol,ul {
+	padding-left:16px;                  
+	border-top:1px solid black;		
+	padding-top:16px;
+}
+
+ol li{ 
+	margin-bottom:20px;                 
+	list-style:upper-roman;				
+}
+
+ul li{ 
+	margin-bottom:20px;                 
+	list-style:square;
+}
+
+a {
+	color:#FFFFFF;
+}
+
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  background-color: #45C4B0;
+  padding: 10px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar  li  a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  display: block;
+}
+.navbar  li  a:hover {
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #45C4B0 ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
