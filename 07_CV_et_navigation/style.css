@@ -122,3 +122,33 @@ a {
 .dropdown {
   position: relative;
 }
+
+.zone_image_film {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.zone_image_film img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.description table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.description th, .description td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.description th {
+  background-color: #0a4c8b;
+  color: white;
+  width: 30%;
+}
