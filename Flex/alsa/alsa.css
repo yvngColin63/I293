@@ -1,0 +1,52 @@
+/*colin 08.12.25 Flex*/
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+
+    background-color: lightgray;
+    color: gray;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+    background-color: tomato;   
+}
+li:nth-child(2){
+    background-color: orange;
+}
+li:nth-child(3){
+    background-color: blue;
+    color: white;
+}
+li:nth-child(4){
+    background-color: green;
+}
+.pomme {
+    flex-direction: column;
+}
+.poire{
+    flex-wrap: wrap-reverse;
+}
+.abricot{
+    align-items: center;
+}
+.cerise{
+    height: 10em;
+}
+p{
+    margin: auto;
+    padding: 10px;
+    background-color: magenta;
+}
+
+.kiwi li:nth-child(2){
+    order: 3;
+}
+
+.kiwi li:nth-child(2){
+    order: 5;
+}
+
