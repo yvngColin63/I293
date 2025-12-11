@@ -1,35 +1,145 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Formulaire</title>
-        <meta charset="UTF-8">
-        <rel="stylesheet" link="style.css"></rel>
-    </head>
-    <body>
-                <form action="mailto:aqszedwedx@gmail.com" method="post">
-                <label for="idname">First Name: </label><br>
-                <input type="text" id="idname" name="fname" required><br>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulaire</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
 
-                <label for="idpwd">Password: </label><br>
-                <input type="password" id="idpwd" name="idpwd"><br><br>
+  <div class="title">Formulaire Colin</div>
 
-                <input type="submit" value="submit">
-                <input type="reset" value="reset">
-                </form>
-            
-            <section class="checklist">
-            <h2>Packing List</h2>
-                <input type="checkbox" id="item-1">
-                <label for="item-1">Passport</label><br>
-               
-                <input type="checkbox" id="item-2">
-                <label for="item-2">Boarding pass</label><br>
-               
-                <input type="checkbox" id="item-3">
-                <label for="item-3">Charger</label>
-               
-         
-            </section>
+  <table class="frame" role="presentation" aria-label="Disposition en deux colonnes (tableaux uniquement)">
+    <tr class="row">
+      <td class="col">
+
+          <table class="panel orange">
+            <tr><td class="pcontent">
+              <table style="width:100%; border-collapse:separate; border-spacing:8px 10px;">
+                <tr>
+                  <td style="width:34%;"><label for="username">Username :</label></td>
+                  <td><input id="username" name="username" type="text" autocomplete="username" /></td>
+                </tr>
+                <tr>
+                  <td><label for="password">Password :</label></td>
+                  <td><input id="password" name="password" type="password" autocomplete="current-password" /></td>
+                </tr>
+              </table>
+            </td></tr>
+          </table>
+
+          <table class="panel blue">
+            <tr><td class="pcontent">
+              <table style="width:100%; border-collapse:separate; border-spacing:0;">
+                <tr><td><label for="liste-choix">Liste de choix :</label></td></tr>
+                <tr><td>
+                  <select id="liste-choix" name="liste-choix" size="3">
+                    <option>Valeur liste 1</option>
+                    <option>Valeur liste 2</option>
+                    <option>Valeur liste 3</option>
+                  </select>
+                </td></tr>
+              </table>
+            </td></tr>
+          </table>
+
+          <table class="panel orange">
+            <tr><td class="pcontent">
+              <table style="width:100%; border-collapse:separate; border-spacing:6px 6px;">
+                <tr><td><strong>Choisissez la plus belle case :</strong></td></tr>
+                <tr><td><label><input type="checkbox" name="case1" /> Choix case à cocher 1</label></td></tr>
+                <tr><td><label><input type="checkbox" name="case2" /> Choix case à cocher 2</label></td></tr>
+                <tr><td><label><input type="checkbox" name="case3" /> Choix case à cocher 3</label></td></tr>
+              </table>
+            </td></tr>
+          </table>
+
+          <table class="panel blue">
+            <tr><td class="pcontent" style="text-align:left;">
+              <button type="button" class="btn">Salut les formulaires</button>
+            </td></tr>
+          </table>
+
+          <table class="panel orange">
+            <tr><td class="pcontent">
+              <table style="width:100%; border-collapse:separate; border-spacing:8px 10px;">
+                <tr>
+                  <td style="width:30%;"><label for="date">Date : <span aria-hidden="true">jj.mm.aaaa</span></label></td>
+                  <td><input id="date" name="date" type="date" /></td>
+                </tr>
+              </table>
+            </td></tr>
+          </table>
+
+        </form>
+      </td>
+
+      <td class="col">
+
+        <table class="panel blue">
+          <tr><td class="pcontent">
+            <table style="width:100%; border-collapse:separate; border-spacing:0;">
+              <tr><td><label for="multiligne">Boîte de texte multiligne</label></td></tr>
+              <tr><td>
+                <textarea id="multiligne" name="multiligne" rows="4"
+                  placeholder="Bonjour, voici un exemple de boîte de texte multiligne sur seulement 4 lignes. Cette boîte peut néanmoins être redimensionnée."></textarea>
+              </td></tr>
+            </table>
+          </td></tr>
         </table>
-    </body>
+
+        <table class="panel orange">
+          <tr><td class="pcontent">
+            <table style="width:100%; border-collapse:separate; border-spacing:0;">
+              <tr><td><label for="liste-deroulante">Liste déroulante :</label></td></tr>
+              <tr><td>
+                <select id="liste-deroulante" name="liste-deroulante">
+                  <option>Valeur liste déroulante 1</option>
+                  <option>Valeur liste déroulante 2</option>
+                  <option>Valeur liste déroulante 3</option>
+                </select>
+              </td></tr>
+            </table>
+          </td></tr>
+        </table>
+
+        <table class="panel blue">
+          <tr><td class="pcontent">
+            <table style="width:100%; border-collapse:separate; border-spacing:6px 6px;">
+              <tr><td><strong>Choisissez le plus beau bouton radio :</strong></td></tr>
+              <tr><td><label><input type="radio" name="radio" value="1" /> Bouton Radio 1</label></td></tr>
+              <tr><td><label><input type="radio" name="radio" value="2" /> Bouton Radio 2</label></td></tr>
+              <tr><td><label><input type="radio" name="radio" value="3" /> Bouton Radio 3</label></td></tr>
+            </table>
+          </td></tr>
+        </table>
+
+        <table class="panel orange">
+          <tr><td class="pcontent">
+            <table class="actions">
+              <tr>
+                <td><button type="reset" class="btn">Retour à la case départ</button></td>
+                <td><button type="submit" class="btn primary">Envoyer la sauce</button></td>
+              </tr>
+            </table>
+          </td></tr>
+        </table>
+
+        <table class="panel blue">
+          <tr><td class="pcontent">
+            <table class="file-row">
+              <tr>
+                <td style="width:1%;"><label for="fichier" class="btn">Parcourir…</label></td>
+                <td style="width:1%;"><input id="fichier" name="fichier" type="file" /></td>
+                <td><span>Aucun fichier sélectionné.</span></td>
+              </tr>
+            </table>
+          </td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
 </html>

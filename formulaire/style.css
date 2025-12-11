@@ -1,0 +1,94 @@
+:root{
+      --panel-orange: #f4a460;     
+      --panel-blue:   #87ceeb;     
+      --panel-border: #d1c7a3;
+      --frame-border: #cfc7a1;
+      --page-bg:      #fffef7;
+      --text:         #2b2b2b;
+      --accent:       #355c7d;
+    }
+    html, body { margin:0; padding:0; background:var(--page-bg); color:var(--text); font-family:"Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+    .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      padding: 20px 0 10px;
+    }
+
+    table.frame {
+      width: 95%;
+      max-width: 980px;
+      margin: 0 auto 24px;
+      border: 2px solid var(--frame-border);
+      background: #faf7ea;
+      border-collapse: separate;
+      border-spacing: 10px; 
+      box-shadow: 0 2px 4px rgba(0,0,0,.06);
+    }
+
+    td.col {
+      width: 50%;
+      vertical-align: top;
+    }
+
+    table.panel {
+      width: 100%;
+      border: 2px solid var(--panel-border);
+      border-radius: 4px;
+      overflow: hidden; 
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.24);
+      margin-bottom: 12px;
+    }
+    table.panel.orange { background: var(--panel-orange); }
+    table.panel.blue   { background: var(--panel-blue); }
+
+    td.pcontent {
+      padding: 12px;
+    }
+
+    label { font-weight: 600; font-size: 0.95rem; }
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 2px solid #b9b9b9;
+      border-radius: 3px;
+      background: #fff;
+      outline: none;
+      font-size: 0.95rem;
+    }
+    textarea { min-height: 92px; resize: vertical; }
+    select[size] { height: auto; }
+
+    .btn {
+      appearance: none;
+      border: 2px solid #616161;
+      border-radius: 4px;
+      background: #e6e6e6;
+      padding: 8px 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform .06s ease, filter .12s ease;
+    }
+    .btn.primary {
+      background: #fff;
+      border-color: var(--accent);
+      color: #183a59;
+    }
+    .btn:hover { filter: brightness(0.98); }
+    .btn:active { transform: translateY(1px); }
+
+    table.actions { width: 100%; border-collapse: collapse; }
+    table.actions td { padding: 6px 6px 0 0; }
+
+    table.file-row { width: 100%; border-collapse: collapse; }
+    table.file-row td { padding-right: 10px; vertical-align: middle; }
+
+    @media (max-width: 760px) {
+      table.frame, tr.row { width: 100%; }
+      td.col { display: block; width: 100%; }
+    }
