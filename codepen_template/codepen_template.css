@@ -1,0 +1,53 @@
+/* Layout */
+html {display: flex; flex-direction: column;} /* IE fix */
+/***************************************************************************/
+/* 						Partie Flex Grid								   */
+/***************************************************************************/
+body {
+  min-height: 100vh;
+}
+.wrapper {
+  display: block; /* IE fix */
+}
+nav {
+  width: 15em;
+}
+.content {
+  display: block; /* IE fix */
+}
+/***************************************************************************/
+/* Decoration */
+body {
+	margin: 0;
+	background: white;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1.1em;
+}
+header, nav, section, footer {
+	padding: 10px;
+	margin: 0;
+	border: 2px solid white;
+	border-radius: 10px;
+	color: white;
+}
+header {
+	background: dodgerblue;
+  text-align: center;
+}
+nav {
+	background: orange;
+}
+nav a {
+  display: block;
+  padding: .5em 1em;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+section {
+	background: hotpink;
+}
+footer {
+	background: olivedrab;
+  text-align: center;
+}
