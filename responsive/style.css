@@ -1,0 +1,95 @@
+       body{
+            font-family:"verdana";
+            color:white;
+            font-size:25px;
+            margin:0px;
+            padding:0px;           
+        }
+
+        *{ box-sizing: border-box;}
+
+    
+        header{
+            width:100%;
+            height:100px;
+            background-color:#12403E;
+            display: flex;
+
+        }
+
+        #logo{
+            width:100px;
+            background-color:#F8CE3D;
+            padding: 30px;
+            
+        }
+
+        #menu{
+            width: 100%;
+            background-color:#DF6127;
+            padding:10px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width:768px) {
+            #groupe_produits{
+                flex-direction: column;
+                padding: 0;
+            }
+            #groupe_news_form{
+                flex-direction: column;
+                padding: 0;
+            }
+        }
+
+        #slider{
+            height:480px;
+            background-color:#58B7B8;
+            padding:10px;
+            margin:20px 0px 0px 0px;
+        }
+
+        #groupe_produits{
+            justify-content: center;
+            margin:30px;
+            padding:10px;
+            display: flex;
+        }
+
+        #groupe_news_form{
+            justify-content: center;
+            margin:auto;
+            padding:10px;
+            background-color:#e8e7e7;
+            display: flex;
+            gap: 20px;
+        }
+
+        .produit{
+            height:460px;
+            width:510px;
+            padding:10px;
+            margin:10px;            
+            background-color:#DF6127;
+        }
+
+
+        #news,#formulaire{
+           height:300px;
+           margin:10px;
+           width:100%;
+           margin-left: 0;     
+           margin-right: 0;    
+           padding:10px;         
+           background-color:#58B7B8;
+        }
+
+        footer{
+            margin-top:20px;
+            width:100%;
+            height:100px;
+            background-color:#12403E;
+            padding:10px;         
+        }
+
+
